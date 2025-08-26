@@ -14,19 +14,23 @@
   <body>
     <!----------navbar  section----------->
     <header>
-      <div class="main-div flex justify-between px-14 items-center mt-2">
-        <div class="left-parent flex gap-1">
+      <div
+        class="main-div flex flex-col px-4 sm:px-14 gap-4 sm:gap-0 sm:flex-row justify-between items-center mt-2"
+      >
+        <div class="left-parent items-center flex gap-1">
           <div class="p-2">
-            <img src="./images/assets/logo.png" class="w-14" />
+            <img src="./images/assets/logo.png" class="w-12 sm:w-14" />
           </div>
           <div class="p-2">
-            <h3 class="text-[#006747] text-lg font-bold">
+            <h3
+              class="text-center sm:text-left text-[#006747] text-lg font-bold"
+            >
               Emergency <br />Service
             </h3>
           </div>
         </div>
 
-        <div class="right-parent flex gap-5 items-center">
+        <div class="right-parent flex-col sm:flex-row flex gap-5 items-center">
           <div
             class="flex gap-3 items-center p-2 bg-[#41ff6b1a] rounded-4xl w-18"
           >
@@ -40,7 +44,9 @@
             <img src="./images/assets/coin.png" class="w-7 h-7" />
           </div>
           <div class="">
-            <button class="btn bg-[#00a63e] rounded-4xl text-white">
+            <button
+              class="btn text-sm sm:text-base bg-[#00a63e] rounded-4xl text-white"
+            >
               <span>0</span>Copy
             </button>
           </div>
@@ -48,6 +54,23 @@
       </div>
     </header>
     <!-- -------banner section------------>
-    <section class="banner-head"></section>
+    <section
+      class="banner-head text-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-4"
+    >
+      <div class="banner-parent">
+        <img
+          src="./images/assets/logo-dark.png"
+          class="mx-auto w-26 h-auto my-5"
+        />
+
+        <h1 class="text-white font-semibold text-3xl mb-4">
+          জরুরি সেবা ডিরেক্টরি
+        </h1>
+        <p class="text-white mb-4">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </section>
   </body>
 </html>
