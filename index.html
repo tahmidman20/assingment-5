@@ -87,7 +87,7 @@
       <section id="products-box" class="col-span-9">
         <div class="card-items grid grid-cols-1 md:grid md:grid-cols-3 gap-5">
           <!------------------card-1------------------->
-          <div class="card bg-white shadow-md">
+          <div id="card-1" class="card bg-white shadow-md">
             <div class="flex justify-between items-center px-6 pt-5">
               <figure class="bg-red-100 w-15 h-15 rounded-xl">
                 <img src="./images/assets/emergency.png" class="w-10" />
@@ -360,15 +360,19 @@
             </div>
           </div>
       </section>
-      <!-- ------------------------- -->
+      <!-- ---------history section---------------- -->
       <div id="card-box" class="bg-white col-span-9 md:col-span-3 shadow-md">
-        
         <div class="flex justify-between p-6 items-center">
            <p><i class="fa-regular fa-clock text-gray-500"></i> Call History</p>
-           <button class="btn text-white bg-[#00a63e] rounded-3xl">Clear</button>
-
-        </div>
-      </div>
+           <button id="clear-all" class="btn text-white bg-[#00a63e] rounded-3xl">Clear</button>
+          </div>
+           <div class="side-box">
+            <div><h1 class="history-title font-bold"></h1>
+              <p class="history-number"></p>
+            </div>
+            <span class="current-time" ></span>
+          </div>
+              </div>
     </section>
     <!-- js-------------- -->
      <script src="index.js"></script>
