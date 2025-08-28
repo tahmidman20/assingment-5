@@ -2,11 +2,11 @@
 
 const heartNumber = document.getElementById("heart-number");
 const heartButtons = document.querySelectorAll(".heart-btn");
-let count = parseInt(heartNumber.textContent);
+let heartCount = parseInt(heartNumber.textContent);
 heartButtons.forEach(function (button) {
   button.addEventListener("click", function () {
-    count++;
-    heartNumber.textContent = count;
+    heartCount++;
+    heartNumber.textContent = heartCount;
   });
 });
 
@@ -37,9 +37,9 @@ let copyCount = parseInt(copyNumber?.textContent || "0");
 const copyButtons = document.querySelectorAll(".copy-btn");
 copyButtons.forEach(function (button) {
   button.addEventListener("click", function () {
-    count++;
+    copyCount++;
     if (copyNumber) {
-      copyNumber.textContent = count.toString();
+      copyNumber.textContent = copyCount.toString();
     }
     const card = button.closest(".card");
     const callNumber = card.querySelector(".call-number")?.textContent.trim();
